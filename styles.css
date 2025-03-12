@@ -56,10 +56,133 @@
   letter-spacing: 0;
 }
 
+/* Structure */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 2113px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-400);
+  width: 305px;
+}
+.wrap,
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-400);
+}
+.section {
+  padding: var(--spacing-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 24.74%);
+  border-radius: 8px;
+}
+.section-01 {
+  background-color: var(--clr-purple-500);
+  color: white;
+}
+.section-02 {
+  background-color: var(--clr-grey-500);
+  color: white;
+}
+.section-03 {
+  background-color: white;
+}
+.section-04 {
+  background-color: var(--clr-dark-blue);
+  color: white;
+}
+.section-05 {
+  background-color: white;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-200);
+}
+
+.section-01 .avatar {
+  border-color: var(--clr-purple-300);
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.section-01 .avatar,
+.section-04 .avatar {
+  border: 2px solid var(--clr-purple-300);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile :last-child {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 647px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    height: 1029px;
+  }
+  main {
+    width: 1114px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-400);
+    align-items: start;
+  }
+
+  .wrap {
+    grid-column: span 2;
+  }
+
+  .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-400);
+  }
+
+  .section-01,
+  .section-04 {
+    grid-column: span 2;
+  }
+
+  .section-05 {
+    height: 100%;
+  }
+}
+
 /* Attribution */
 footer {
-  position: absolute;
-  bottom: 3%;
+  margin-top: 2rem;
 }
 .attribution {
   font-size: 0.6875rem; /* 11px */
