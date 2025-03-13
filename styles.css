@@ -94,6 +94,32 @@ main {
   background-color: var(--clr-purple-500);
   color: white;
 }
+.section-01 {
+  position: relative;
+}
+.title {
+  z-index: 1;
+}
+.quotes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 0;
+  margin-top: -32px;
+}
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--spacing-50);
+}
+.quotes img {
+  align-self: flex-end;
+}
 .section-02 {
   background-color: var(--clr-grey-500);
   color: white;
