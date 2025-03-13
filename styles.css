@@ -86,8 +86,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-200);
-  box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 24.74%);
-  border-radius: 8px;
+  box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem hsla(217, 19%, 35%, 24.74%); /* 40px 60px 50px -47px */
+  border-radius: 0.5rem; /* 8px */
 }
 .section-01,
 .tablet-section-01 {
@@ -129,15 +129,16 @@ main {
 }
 
 .avatar {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem; /* 28px */
+  height: 1.75rem; /* 28px */
   border-radius: 50%;
   overflow: hidden;
 }
+
 .tablet-section-01 .avatar,
 .section-01 .avatar,
 .section-04 .avatar {
-  border: 2px solid var(--clr-purple-300);
+  border: 0.125rem solid var(--clr-purple-300); /* 2px */
 }
 
 .avatar img {
@@ -154,10 +155,10 @@ main {
 
 @media (min-width: 768px) {
   body {
-    height: 1353px;
+    height: 84.5625rem; /* 1353px */
   }
   main {
-    width: 647px;
+    width: 40.4375rem; /* 647px */
   }
   .section-01 {
     display: none;
@@ -180,10 +181,10 @@ main {
 
 @media (min-width: 1440px) {
   body {
-    height: 1029px;
+    height: 64.3125rem; /* 1029px */
   }
   main {
-    width: 1114px;
+    width: 69.625rem; /* 1114px */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-400);
@@ -231,5 +232,5 @@ footer {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-purple-500);
 }
