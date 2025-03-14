@@ -64,6 +64,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 2113px;
+  background-color: var(--clr-grey-100);
 }
 
 main {
