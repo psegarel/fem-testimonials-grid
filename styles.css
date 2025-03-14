@@ -205,7 +205,7 @@ main {
   main {
     width: 69.625rem; /* 1114px */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-400);
     align-items: start;
   }
@@ -217,7 +217,7 @@ main {
     display: flex;
   }
   .wrap {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   .section-01 {
     display: flex;
