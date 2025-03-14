@@ -246,7 +246,7 @@ main {
 /* Attribution */
 footer {
   position: absolute;
-  bottom: 3%;
+  top: 3%;
   right: 3%;
 }
 .attribution {
