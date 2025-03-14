@@ -87,8 +87,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-200);
-  box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem hsla(217, 19%, 35%, 24.74%); /* 40px 60px 50px -47px */
-  border-radius: 0.5rem; /* 8px */
+  box-shadow: 2rem 3.75rem 2.2rem rgba(0, 0, 0, 0.15); /* 40px 60px 50px -24px */
+  border-radius: 0.5rem;
 }
 .section-01,
 .tablet-section-01 {
