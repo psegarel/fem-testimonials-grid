@@ -207,7 +207,7 @@ main {
     width: 69.625rem; /* 1114px */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-300);
+    gap: var(--spacing-400);
     align-items: start;
   }
   .tablet-container {
@@ -230,7 +230,7 @@ main {
   .group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-300);
+    gap: var(--spacing-400);
   }
 
   .section-01,
