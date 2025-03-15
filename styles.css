@@ -83,14 +83,38 @@ main {
   gap: var(--spacing-400);
 }
 .section {
+  position: relative;
   padding: var(--spacing-400);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-200);
-  box-shadow: 2rem 3.6rem 2.2rem rgba(0, 0, 0, 0.14); /* 40px 60px 50px -24px */
+  box-shadow: 2rem 3.6rem 2.2rem rgba(0, 0, 0, 0.14);
   border-radius: 0.5rem;
 }
+
 .section-01,
+.tablet-section-01 {
+  z-index: 1;
+  background-color: var(--clr-purple-500);
+  color: white;
+}
+
+.section-02 {
+  z-index: 2;
+}
+
+.section-03 {
+  z-index: 3;
+}
+
+.section-04 {
+  z-index: 2;
+}
+
+.section-05 {
+  z-index: 1;
+}
+
 .tablet-section-01 {
   background-color: var(--clr-purple-500);
   color: white;
@@ -219,6 +243,7 @@ main {
   }
   .wrap {
     grid-column: span 3;
+    gap: var(--spacing-300);
   }
   .section-01 {
     display: flex;
